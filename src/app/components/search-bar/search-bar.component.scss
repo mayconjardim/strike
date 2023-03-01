@@ -1,0 +1,100 @@
+.search {
+  &-container {
+    width: 100%;
+    height: 60px;
+    background-color: #323a45;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+  }
+
+  &-form {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &-input {
+    margin-left: 10px;
+    padding: 10px;
+    width: 300px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    border: none;
+  }
+
+  &-button {
+    border: none;
+    outline: none;
+    background-color: #4527a0;
+    padding: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 700;
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: #4527a0;
+      background-color: #fff;
+      border: 1px solid 3f51b5;
+    }
+  }
+}
+
+.logo {
+  margin-left: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  animation: lights 5s 750ms linear infinite;
+}
+
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(291, 92%, 42%, 0.726),
+      0 0 0.125em hsla(285, 91%, 49%, 0.807),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+
+  30% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(290, 95%, 34%, 0.72),
+      0 0 0.125em hsla(290, 96%, 47%, 0.842),
+      -0.5em -0.125em 0.25em hsla(293, 92%, 46%, 0.726),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  40% {
+    color: hsl(230, 100%, 95%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(293, 92%, 46%, 0.726),
+      0 0 0.125em hsla(293, 92%, 46%, 0.726),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+}
